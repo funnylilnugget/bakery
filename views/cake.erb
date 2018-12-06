@@ -1,0 +1,18 @@
+
+<div class="container"
+  <div class="row">
+    <div class="column text-background">
+      <h2>Cakes</h2>
+      <h4><i>What did the cake say to the fork?<br>
+        You want a piece of me?</i></h4>
+        <br>
+  <%CAKES.each do |cake|%>
+  <h4><b><%=cake.name%><b></h4>
+  <img class="item-image" src=<%=cake.image%>>
+  <h4><%=cake.description%></h4>
+  <h4><%=cake.price%></h4>
+  <hr>
+  <%end%>
+</div>
+</div>
+</div>

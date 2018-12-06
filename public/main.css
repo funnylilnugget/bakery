@@ -5,7 +5,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: garamond;
+  font-family: 'Charmonman', cursive;
 }
 
 .topnav {
@@ -20,7 +20,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .topnav li {
@@ -46,5 +46,52 @@ body {
 
 .item-image {
   height: 300px;
+  width: auto;
+}
+
+.logo-text h1 {
+  font-size: 120px;
+  color: white;
+  box-shadow: 10px red;
+}
+
+.footernav {
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+.footernav ul, a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+.footernav li {
+  display: inline;
+
+}
+
+#boxstyle {
+  color: white;
+  text-align: left;
+
+}
+
+input {
+  background-color: white;
+}
+
+#email{
+  background-color: white;
+}
+
+.footer-nav ul li img{
+  height: 30px;
   width: auto;
 }

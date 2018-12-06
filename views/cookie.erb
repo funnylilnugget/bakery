@@ -3,13 +3,14 @@
   <div class="row">
     <div class="column text-background">
       <h2>Cookies</h2>
-      <h4>How do you make a baby computer cry?<br>
-        Delete his cookies!</h4>
+      <h4><i>How do you make a baby computer cry?<br>
+        Delete his cookies!</i></h4>
+        <br>
   <%COOKIES.each do |cookie|%>
-  <p><%=cookie.name%></p>
+  <h4><b><%=cookie.name%><b></h4>
   <img class="item-image" src=<%=cookie.image%>>
-  <p><%=cookie.description%></p>
-  <p><%=cookie.price%></p>
+  <h4><%=cookie.description%></h4>
+  <h4><%=cookie.price%></h4>
   <hr>
   <%end%>
 </div>

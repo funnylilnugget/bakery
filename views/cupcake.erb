@@ -1,0 +1,17 @@
+<div class="container"
+  <div class="row">
+    <div class="column text-background">
+      <h2>Cupcakes</h2>
+      <h4><i>Why did the burglar break into the bakery?<br>
+        Because he heard the cupcakes were rich.</i></h4>
+        <br>
+  <%CUPCAKES.each do |cupcake|%>
+  <h4><b><%=cupcake.name%><b></h4>
+  <img class="item-image" src=<%=cupcake.image%>>
+  <h4><%=cupcake.description%></h4>
+  <h4><%=cupcake.price%></h4>
+  <hr>
+  <%end%>
+</div>
+</div>
+</div>

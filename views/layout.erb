@@ -5,10 +5,11 @@
     <title>Cupcakes & Things</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i" rel="stylesheet">
     <link href="https://unpkg.com/lemoncss/dist/lemon.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-  <div class="topnav">
+  <nav class="topnav">
       <ul>
         <li><a href="/cake" class=active>Cake</a></li>
         <li><a href="/cookie" class=active>Cookies</a></li>
@@ -16,8 +17,29 @@
         <li><a href="/cupcake" class=active>Cupcakes</a></li>
         <li><a href="/about" class=active>About Us</a></li>
       </ul>
-  </div>
+  </nav>
+
   <%= yield %>
 
+<footer class="footernav">
+  <div class="row">
+    <div class="column">
+      <ul>
+        <li>facebook</li>
+        <li>twitter</li>
+        <li>etsy</li>
+        <li>pinterest</li>
+        <li>instagram</li>
+      </ul>
+    </div>
+    <div class="column"></div>
+    <div class="column">
+      <form>
+        <label id="boxstyle" for="name">Subscribe to our newsletter</label>
+        <input type="text" placeholder="Enter Your Email" id="email">
+        </form>
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
