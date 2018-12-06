@@ -1,5 +1,7 @@
 require 'sinatra'
+require 'sinarta/reloader'
 require './bakery.rb'
+require './test.rb'
 
 # Products to be passed in to the array
 #  -- Cookies --
@@ -18,9 +20,23 @@ cupcake2 = Cupcakes.new("Unicorn Cupcake", "Nothing in life beats unicorns. Unle
 cupcake3 = Cupcakes.new("Vegan Cupcake", "Not all of our cupcakes can be perfect.", "$3.99", "images/vegan_cupcake.jpg")
 cupcake4 = Cupcakes.new("Pumpkin Spice Cupcake", "It's 'basically' wonderful.", "$3.99", "images/pumpkin_spice_cupcake.jpg")
 
+def email_send(recipient)
+  Newsletter.welcome(recipient).deliver_now
+end
+
+
 get "/" do
   erb :index
 end
+
+
+post "/" do
+  recipient = params["email"]
+  email_send(recipient)
+
+  redirect "/"
+end
+
 
 get "/cookie" do
   erb :cookie

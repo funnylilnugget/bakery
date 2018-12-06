@@ -10,7 +10,7 @@ ActionMailer::Base.smtp_settings = {
   }
 
 class Newsletter < ActionMailer::Base
-  default from: 'sfnugget@gmail.com'
+  default from: ENV['EMAIL_USERNAME']
 
   def welcome(recipient)
     @recipient = recipient
@@ -18,8 +18,3 @@ class Newsletter < ActionMailer::Base
       subject: "[Signed up] Welcome #{recipient}")
   end
 end
-
-Newsletter.welcome("sean.justice@gmail.com").deliver_now
-
-          #You need a folder whose name matches the name of the class inheriting from actionmailer base
-          # you need at least 2 files: (function).html.erb and (function).text.erb

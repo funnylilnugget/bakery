@@ -5,7 +5,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Charmonman', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 #myVideo {
@@ -58,16 +58,30 @@ body {
 }
 
 .logo-text h1 {
+  /* position: fixed; */
   font-size: 120px;
   color: white;
-  box-shadow: 10px red;
+  text-shadow: 2px 2px black;
 }
+
+.logo-text h2 {
+  /* position: fixed; */
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/* .sublogo-text h2 {
+  position: fixed;
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 2px black; */
 
 .footernav {
     position: fixed;
     background-color: #333;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     bottom: 0;
 }
 
@@ -97,9 +111,5 @@ input {
 
 #email{
   background-color: white;
-}
-
-.footer-nav ul li img{
-  height: 30px;
-  width: auto;
+  width: 50%;
 }

@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Cupcakes & Things</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="https://unpkg.com/lemoncss/dist/lemon.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-
   <nav class="topnav">
       <ul>
         <li><a href="/cake" class=active>Cake</a></li>
@@ -20,24 +18,21 @@
       </ul>
   </nav>
 
+
   <%= yield %>
+
 
 <footer class="footernav">
   <div class="row">
     <div class="column">
-      <ul>
-        <li>facebook</li>
-        <li>twitter</li>
-        <li>etsy</li>
-        <li>pinterest</li>
-        <li>instagram</li>
-      </ul>
+      <img scr="images/facebook.png">
     </div>
     <div class="column"></div>
     <div class="column">
-      <form>
+      <form action="/" method="post">
         <label id="boxstyle" for="name">Subscribe to our newsletter</label>
-        <input type="text" placeholder="Enter Your Email" id="email">
+        <input type="text" placeholder="Enter Your Email" name="email" id="email">
+        <input type="submit" name="Submit" value="Submit">
         </form>
     </div>
   </div>
