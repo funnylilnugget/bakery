@@ -1,6 +1,7 @@
 body {
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("images/main_page.jpeg");
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
