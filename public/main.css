@@ -45,6 +45,8 @@ body {
 .container {
   padding-top: 200px;
   text-align: center;
+  min-height: 90vh;
+
 }
 
 .text-background {
@@ -78,11 +80,11 @@ body {
   text-shadow: 2px 2px black; */
 
 .footernav {
-    position: fixed;
+    position: static;
     background-color: #333;
     width: 100%;
     /* text-align: center; */
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 .footernav ul, a {

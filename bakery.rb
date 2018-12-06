@@ -9,14 +9,12 @@ class Items
     @description = description
     @price = price
     @image = image
-    p "New Item created"
   end
 end
 
 class Cookies < Items
   def initialize(name, description, price, image)
     super(name, description, price, image)
-    p "new cookie created"
     COOKIES << self
   end
 end

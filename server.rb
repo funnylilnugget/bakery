@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinarta/reloader'
+require 'sinatra/reloader'
 require './bakery.rb'
 require './test.rb'
 
