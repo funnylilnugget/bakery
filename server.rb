@@ -15,7 +15,8 @@ cake4 = Cakes.new("Red Velvet Cake", "Goes down just a little to easily.", "$24.
 #  -- Cupcakes--
 cupcake1 = Cupcakes.new("Banana Split Cupcake", "Just like the ones you used to get as a kid.", "$3.99", "images/banana_split_cupcake.jpg")
 cupcake2 = Cupcakes.new("Unicorn Cupcake", "Nothing in life beats unicorns. Unless it's a unicorn cupcake.", "$3.99", "images/unicorn_cupcake.jpg")
-cupcake3 = Cupcakes.new("Vegan Cupcake", "It just wouldn't be fair if we didn't make something for vegans.", "$3.99", "images/vegan_cupcake.jpg")
+cupcake3 = Cupcakes.new("Vegan Cupcake", "Not all of our cupcakes can be perfect.", "$3.99", "images/vegan_cupcake.jpg")
+cupcake4 = Cupcakes.new("Pumpkin Spice Cupcake", "It's 'basically' wonderful.", "$3.99", "images/pumpkin_spice_cupcake.jpg")
 
 get "/" do
   erb :index
